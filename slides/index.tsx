@@ -7,8 +7,8 @@ import Slide06TanStackCacheCode from "./Slide06TanStackCacheCode";
 import Slide09ReduxBasics from "./Slide09ReduxBasics";
 import Slide10ReduxUsage from "./Slide10ReduxUsage";
 import Slide15ZustandBasics from "./Slide15ZustandBasics";
-import Slide16CompareTanStackForUI from "./Slide16CompareTanStackForUI";
-import Slide17CompareZustandForAPI from "./Slide17CompareZustandForAPI";
+import Slide16StudyZustandForServerState from "./Slide16StudyZustandForServerState";
+import Slide17StudyTanStackForClientState from "./Slide17StudyTanStackForClientState";
 import Slide22Conclusion from "./Slide22Conclusion";
 
 /** Ordre linéaire (après suppressions demandées). */
@@ -22,7 +22,7 @@ export const slides = [
   Slide09ReduxBasics,
   Slide10ReduxUsage,
   Slide15ZustandBasics,
-  Slide16CompareTanStackForUI,
-  Slide17CompareZustandForAPI,
+  Slide16StudyZustandForServerState,
+  Slide17StudyTanStackForClientState,
   Slide22Conclusion,
 ] as const;

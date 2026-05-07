@@ -12,10 +12,10 @@ export default function Slide16StudyZustandForServerState() {
           Partie 1 : tout l&apos;état <strong className="text-accent">serveur</strong> dans Zustand
         </>
       }
-      contentClassName="max-w-none p-6 text-left sm:p-7 md:p-8"
+      contentClassName="max-w-none text-left"
     >
       <p className="mb-4 max-w-[70ch] text-[0.95rem] leading-snug text-neutral-700">
-        Scénario : tu refuses TanStack Query (ou équivalent) et tu stocks dans Zustand tout ce qui vient de l&apos;API.&nbsp;Voici ce que ça implique concrètement : tu dois reconstruire toi‑même ce qu&apos;un cache distant automatise déjà.
+        Voici ce que ça implique concrètement : tu dois reconstruire toi-même ce qu&apos;un cache distant automatise déjà.
       </p>
 
       <div className="overflow-x-auto rounded-lg border border-neutral-900/12 bg-neutral-50/80">
@@ -28,7 +28,7 @@ export default function Slide16StudyZustandForServerState() {
               <th className="px-3 py-2.5 font-semibold text-neutral-900">Ce qui se passe dans ton store</th>
             </tr>
           </thead>
-          <tbody className="bg-white text-neutral-750 [&_td]:align-top">
+          <tbody className="bg-white text-neutral-700 [&_td]:align-top">
             <tr className="border-b border-neutral-900/10">
               <td className="px-3 py-2.5 font-medium text-neutral-900">Cache entre écrans</td>
               <td className="px-3 py-2.5 text-neutral-700">
