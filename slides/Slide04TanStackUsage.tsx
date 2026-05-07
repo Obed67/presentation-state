@@ -22,7 +22,7 @@ const m = useMutation({
 
 export default function Slide04TanStackUsage() {
   return (
-    <Slide codeFocus topic="TanStack Query" title="Exemple — montage typique">
+    <Slide codeFocus topic="TanStack Query" title="Exemple : montage typique">
       <CodeBlock fill code={SAMPLE} language="tsx" filename="hooks/use-items.ts" />
     </Slide>
   );

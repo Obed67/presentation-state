@@ -8,7 +8,7 @@ const SAMPLE = `import { useQueryClient } from "@tanstack/react-query";
 function ExampleAfterMutation() {
   const qc = useQueryClient();
 
-  // 1) setQueryData — tu modifies DIRECTEMENT le cache pour cette queryKey.
+  // 1) setQueryData : tu modifies DIRECTEMENT le cache pour cette queryKey.
   //    L’UI se met à jour tout de suite, sans attendre un refetch réseau.
   qc.setQueryData<number>(["counter"], (previous) => (previous ?? 0) + 1);
 
