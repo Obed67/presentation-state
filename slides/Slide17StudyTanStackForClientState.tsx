@@ -9,7 +9,7 @@ export default function Slide17StudyTanStackForClientState() {
       topic="Étude comparative"
       title={
         <>
-          Partie 2 : état <strong className="text-accent">client UI</strong>{" "}
+          État <strong className="text-accent">client UI</strong>{" "}
           dans TanStack Query
         </>
       }

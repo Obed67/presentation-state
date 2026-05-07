@@ -9,7 +9,7 @@ export default function Slide16StudyZustandForServerState() {
       topic="Étude comparative"
       title={
         <>
-          Partie 1 : état <strong className="text-accent">serveur</strong> dans
+          État <strong className="text-accent">serveur</strong> dans
           Zustand
         </>
       }
