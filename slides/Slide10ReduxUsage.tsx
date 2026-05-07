@@ -12,9 +12,8 @@ const SAMPLE = `const store = configureStore({
 
 export default function Slide10ReduxUsage() {
   return (
-    <Slide topic="Redux (+ Toolkit)" title="Montage" contentClassName="max-w-none text-left">
-      <p className="mb-4">Store, Provider, selectors, dispatch.</p>
-      <CodeBlock code={SAMPLE} />
+    <Slide codeFocus topic="Redux (+ Toolkit)" title="Exemple — configureStore et slices">
+      <CodeBlock fill code={SAMPLE} />
     </Slide>
   );
 }

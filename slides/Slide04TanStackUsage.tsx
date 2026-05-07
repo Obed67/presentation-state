@@ -3,21 +3,27 @@
 import { CodeBlock } from "@/components/CodeBlock";
 import { Slide } from "@/components/Slide";
 
-const SAMPLE = `const { data, error, isPending } = useQuery({
+const SAMPLE = `const qc = useQueryClient()
+
+const { data } = useQuery({
   queryKey: ['items', filters],
   queryFn: () => api.listItems(filters),
 })
 
+// Mutation puis synchro cache :
+// - invalidateQueries → demander un refetch aligné serveur
+// - ou setQueryData → pousser toi-même la nouvelle valeur dans le cache
 const m = useMutation({
   mutationFn: api.createItem,
-  onSuccess: () => qc.invalidateQueries({ queryKey: ['items'] }),
+  onSuccess: async () => {
+    await qc.invalidateQueries({ queryKey: ['items'] })
+  },
 })`;
 
 export default function Slide04TanStackUsage() {
   return (
-    <Slide topic="TanStack Query" title="Montage typique" contentClassName="max-w-none text-left">
-      <p className="mb-4">Provider en haut, puis hooks dans les vues.</p>
-      <CodeBlock code={SAMPLE} />
+    <Slide codeFocus topic="TanStack Query" title="Exemple — montage typique">
+      <CodeBlock fill code={SAMPLE} language="tsx" filename="hooks/use-items.ts" />
     </Slide>
   );
 }
