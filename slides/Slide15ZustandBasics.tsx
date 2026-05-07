@@ -51,7 +51,7 @@ export default function Slide15ZustandBasics() {
     <Slide
       codeFocus
       topic="Zustand"
-      title="Exemple — store partagé (filtres)"
+      title="Exemple : store partagé (filtres)"
     >
       <CodeBlock fill code={SAMPLE} language="ts" filename="stores/useFilterStore.ts" />
     </Slide>

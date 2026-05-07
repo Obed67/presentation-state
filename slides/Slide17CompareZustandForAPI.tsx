@@ -37,7 +37,7 @@ export default function Slide17CompareZustandForAPI() {
       </ul>
 
       <div className="mb-5 overflow-x-auto rounded-md border border-neutral-900/10 text-[0.88rem]">
-        <table className="w-full min-w-[32rem] border-collapse text-left">
+        <table className="w-full min-w-lg border-collapse text-left">
           <thead>
             <tr className="border-b border-neutral-900/10 bg-neutral-50">
               <th className="px-3 py-2 font-semibold text-neutral-900">Besoin</th>
@@ -46,12 +46,12 @@ export default function Slide17CompareZustandForAPI() {
             </tr>
           </thead>
           <tbody className="text-neutral-700">
-            <tr className="border-b border-neutral-900/8">
+            <tr className="border-b border-neutral-900/10">
               <td className="px-3 py-2">Retry réseau</td>
               <td className="px-3 py-2">à coder</td>
               <td className="px-3 py-2">intégré (politique configurable)</td>
             </tr>
-            <tr className="border-b border-neutral-900/8">
+            <tr className="border-b border-neutral-900/10">
               <td className="px-3 py-2">Invalider / resync</td>
               <td className="px-3 py-2">manuel</td>
               <td className="px-3 py-2">
@@ -59,7 +59,7 @@ export default function Slide17CompareZustandForAPI() {
                 , refetch
               </td>
             </tr>
-            <tr className="border-b border-neutral-900/8">
+            <tr className="border-b border-neutral-900/10">
               <td className="px-3 py-2">Pagination / infini</td>
               <td className="px-3 py-2">lourd</td>
               <td className="px-3 py-2">

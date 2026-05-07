@@ -16,7 +16,7 @@ function ExampleAfterMutation() {
     prev ? [...prev, newItemFromServer] : [newItemFromServer],
   );
 
-  // 2) invalidateQueries — tu dis au cache : « ces données ne sont plus fiables ».
+  // 2) invalidateQueries : tu dis au cache : « ces données ne sont plus fiables ».
   //    TanStack Query peut alors refetch (refetchType selon options / comportement par défaut)
   //    pour resynchroniser avec le serveur.
   qc.invalidateQueries({ queryKey: ["items"] });
@@ -27,7 +27,7 @@ function ExampleAfterMutation() {
 
 export default function Slide06TanStackCacheCode() {
   return (
-    <Slide codeFocus topic="TanStack Query" title="Exemple — setQueryData et invalidateQueries">
+    <Slide codeFocus topic="TanStack Query" title="Exemple : setQueryData et invalidateQueries">
       <CodeBlock fill code={SAMPLE} language="tsx" filename="hooks/query-cache.tsx" />
     </Slide>
   );
